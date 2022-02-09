@@ -106,15 +106,6 @@
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
-    <!-- IMEI -->
-    <Preference
-        android:key="imei_info"
-        android:order="32"
-        android:title="@string/status_imei"
-        settings:keywords="@string/keywords_imei_info"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
-
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
