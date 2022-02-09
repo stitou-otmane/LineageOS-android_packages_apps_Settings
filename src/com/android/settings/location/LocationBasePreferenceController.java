@@ -38,7 +38,7 @@ public abstract class LocationBasePreferenceController extends AbstractPreferenc
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return false;
     }
 
 }

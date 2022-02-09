@@ -63,7 +63,7 @@ public class LocationSwitchBarController implements SwitchBar.OnSwitchChangeList
         // Restricted user can't change the location mode, so disable the master switch. But in some
         // corner cases, the location might still be enabled. In such case the master switch should
         // be disabled but checked.
-        final boolean enabled = mLocationEnabler.isEnabled(mode);
+        final boolean enabled = false;
         final int userId = UserHandle.myUserId();
         final RestrictedLockUtils.EnforcedAdmin admin =
                 mLocationEnabler.getShareLocationEnforcedAdmin(userId);
@@ -94,6 +94,6 @@ public class LocationSwitchBarController implements SwitchBar.OnSwitchChangeList
      */
     @Override
     public void onSwitchChanged(Switch switchView, boolean isChecked) {
-        mLocationEnabler.setLocationEnabled(isChecked);
+        mLocationEnabler.setLocationEnabled(false);
     }
 }
