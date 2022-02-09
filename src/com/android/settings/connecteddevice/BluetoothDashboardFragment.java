@@ -96,6 +96,7 @@ public class BluetoothDashboardFragment extends DashboardFragment {
         if (lifecycle != null) {
             lifecycle.addObserver(mController);
         }
+        mSwitchBar.hide();
     }
     /**
      * For Search.

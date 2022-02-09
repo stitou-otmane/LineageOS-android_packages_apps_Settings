@@ -166,10 +166,6 @@ public final class BluetoothEnabler implements SwitchWidgetController.OnSwitchCh
 
     @Override
     public boolean onSwitchToggled(boolean isChecked) {
-        if (maybeEnforceRestrictions()) {
-            triggerParentPreferenceCallback(isChecked);
-            return true;
-        }
 
         // Show toast message if Bluetooth is not allowed in airplane mode
         if (isChecked &&
