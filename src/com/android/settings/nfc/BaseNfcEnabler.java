@@ -70,7 +70,7 @@ public abstract class BaseNfcEnabler {
     }
 
     public boolean isNfcAvailable() {
-        return mNfcAdapter != null;
+        return false;
     }
 
     protected abstract void handleNfcStateChanged(int newState);
