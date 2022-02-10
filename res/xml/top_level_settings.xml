@@ -39,14 +39,6 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <Preference
-        android:key="top_level_apps_and_notifs"
-        android:title="@string/app_and_notification_dashboard_title"
-        android:summary="@string/app_and_notification_dashboard_summary"
-        android:icon="@drawable/ic_homepage_apps"
-        android:order="-100"
-        android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
-
-    <Preference
         android:key="top_level_battery"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
@@ -73,15 +65,6 @@
         android:fragment="com.android.settings.notification.SoundSettings"/>
 
     <Preference
-        android:key="top_level_storage"
-        android:title="@string/storage_settings"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_homepage_storage"
-        android:order="-60"
-        android:fragment="com.android.settings.deviceinfo.StorageSettings"
-        settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
-
-    <Preference
         android:key="top_level_security"
         android:title="@string/security_settings_title"
         android:summary="@string/summary_placeholder"
@@ -89,15 +72,6 @@
         android:order="-40"
         android:fragment="com.android.settings.security.SecuritySettings"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
-
-    <Preference
-        android:key="top_level_accessibility"
-        android:title="@string/accessibility_settings"
-        android:summary="@string/accessibility_settings_summary"
-        android:icon="@drawable/ic_homepage_accessibility"
-        android:order="-20"
-        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
-        settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 
     <Preference
         android:key="top_level_system"
