@@ -102,6 +102,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         if (isUiRestricted()) {
             mUnavailable = true;
         }
+        mUnavailable = true;
     }
 
     @Override
@@ -129,7 +130,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         mSwitchBarController = new WifiTetherSwitchBarController(activity,
                 new SwitchBarController(switchBar));
         getSettingsLifecycle().addObserver(mSwitchBarController);
-        switchBar.show();
+        switchBar.hide();
     }
 
     @Override
