@@ -93,9 +93,9 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
 
         // Add unique controllers to list.
         if (controllersFromCode != null) {
-            controllers.addAll(controllersFromCode);
+            // controllers.addAll(controllersFromCode);
         }
-        controllers.addAll(uniqueControllerFromXml);
+        controllers.addAll(controllersFromXml);
 
         // And wire up with lifecycle.
         final Lifecycle lifecycle = getSettingsLifecycle();
