@@ -30,14 +30,6 @@
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
 
     <Preference
-            android:key="top_level_apps_and_notifs"
-            android:title="@string/app_and_notification_dashboard_title"
-            android:summary="@string/app_and_notification_dashboard_summary"
-            android:icon="@drawable/ic_homepage_apps"
-            android:order="-100"
-            android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
-
-    <Preference
         android:key="top_level_battery"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
