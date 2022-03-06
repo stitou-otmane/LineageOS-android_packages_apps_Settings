@@ -49,7 +49,7 @@ import com.android.settingslib.development.DevelopmentSettingsEnabler;
 public class BuildNumberPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart {
 
-    static final int TAPS_TO_BE_A_DEVELOPER = 10000;
+    static final int TAPS_TO_BE_A_DEVELOPER = 15;
     static final int REQUEST_CONFIRM_PASSWORD_FOR_DEV_PREF = 100;
 
     private Activity mActivity;
@@ -117,10 +117,6 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
-        // disable developer mode
-        if (true) {
-            return false;
-        }
 
         if (!TextUtils.equals(preference.getKey(), getPreferenceKey())) {
             return false;
@@ -189,7 +185,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
                         mProcessingLastDevHit ? 0 : 1);
             } else if (mDevHitCountdown > 0
                     && mDevHitCountdown < (TAPS_TO_BE_A_DEVELOPER - 2)) {
-                if (mDevHitToast != null) {
+                /*if (mDevHitToast != null) {
                     mDevHitToast.cancel();
                 }
                 mDevHitToast = Toast.makeText(mContext,
@@ -197,7 +193,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
                                 R.plurals.show_dev_countdown_cm, mDevHitCountdown,
                                 mDevHitCountdown),
                         Toast.LENGTH_SHORT);
-                mDevHitToast.show();
+                mDevHitToast.show();*/
             }
 
             mMetricsFeatureProvider.action(
@@ -245,12 +241,12 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     private void enableDevelopmentSettings() {
         mDevHitCountdown = 0;
         mProcessingLastDevHit = false;
-        //DevelopmentSettingsEnabler.setDevelopmentSettingsEnabled(mContext, true);
+        DevelopmentSettingsEnabler.setDevelopmentSettingsEnabled(mContext, true);
         if (mDevHitToast != null) {
             mDevHitToast.cancel();
         }
-        //mDevHitToast = Toast.makeText(mContext, R.string.show_dev_on_cm,
-        //        Toast.LENGTH_LONG);
-        //mDevHitToast.show();
+        mDevHitToast = Toast.makeText(mContext, R.string.show_dev_on_cm,
+                Toast.LENGTH_LONG);
+        mDevHitToast.show();
     }
 }
