@@ -49,7 +49,7 @@ import com.android.settingslib.development.DevelopmentSettingsEnabler;
 public class BuildNumberPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart {
 
-    static final int TAPS_TO_BE_A_DEVELOPER = 15;
+    static final int TAPS_TO_BE_A_DEVELOPER = 100;
     static final int REQUEST_CONFIRM_PASSWORD_FOR_DEV_PREF = 100;
 
     private Activity mActivity;
