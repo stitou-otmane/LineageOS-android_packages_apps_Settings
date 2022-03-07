@@ -63,6 +63,7 @@
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
 
     <!-- Legal information -->
+    <!--
     <Preference
         android:key="legal_container"
         android:order="15"
@@ -70,6 +71,7 @@
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"
         settings:searchable="false"/>
+        -->
 
     <!-- Regulatory labels -->
     <Preference
@@ -121,7 +123,6 @@
             android:order="42"
             android:title="@string/firmware_version"
             android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <!--IP address -->
