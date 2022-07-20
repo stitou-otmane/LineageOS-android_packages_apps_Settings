@@ -118,7 +118,7 @@ public class LocationEnabler implements LifecycleObserver, OnStart, OnStop {
             }
             return;
         }
-        updateLocationEnabled(mContext, enabled, UserHandle.myUserId(),
+        updateLocationEnabled(mContext, false, UserHandle.myUserId(),
                 Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
         refreshLocationMode();
     }

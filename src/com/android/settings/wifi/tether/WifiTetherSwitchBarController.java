@@ -94,11 +94,7 @@ public class WifiTetherSwitchBarController implements
 
     @Override
     public void onClick(View v) {
-        if (((Switch) v).isChecked()) {
-            startTether();
-        } else {
-            stopTether();
-        }
+        stopTether();
     }
 
     void stopTether() {

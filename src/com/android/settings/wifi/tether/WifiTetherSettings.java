@@ -105,6 +105,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         if (isUiRestricted()) {
             mUnavailable = true;
         }
+        mUnavailable = true;
     }
 
     @Override

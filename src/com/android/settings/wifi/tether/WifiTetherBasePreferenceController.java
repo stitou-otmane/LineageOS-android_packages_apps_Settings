@@ -52,7 +52,7 @@ public abstract class WifiTetherBasePreferenceController extends AbstractPrefere
 
     @Override
     public boolean isAvailable() {
-        return mWifiManager != null && mWifiRegexs != null && mWifiRegexs.length > 0;
+        return false;
     }
 
     @Override

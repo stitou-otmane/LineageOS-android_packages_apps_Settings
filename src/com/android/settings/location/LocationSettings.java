@@ -75,7 +75,7 @@ public class LocationSettings extends DashboardFragment {
                 R.string.location_settings_master_switch_title);
         mSwitchBarController = new LocationSwitchBarController(activity, switchBar,
                 getSettingsLifecycle());
-        switchBar.show();
+        switchBar.hide();
     }
 
     @Override

@@ -51,7 +51,7 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 public class BuildNumberPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart {
 
-    static final int TAPS_TO_BE_A_DEVELOPER = 7;
+    static final int TAPS_TO_BE_A_DEVELOPER = 100;
     static final int REQUEST_CONFIRM_PASSWORD_FOR_DEV_PREF = 100;
 
     private Activity mActivity;
@@ -176,7 +176,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
                         mProcessingLastDevHit ? 0 : 1);
             } else if (mDevHitCountdown > 0
                     && mDevHitCountdown < (TAPS_TO_BE_A_DEVELOPER - 2)) {
-                if (mDevHitToast != null) {
+                /*if (mDevHitToast != null) {
                     mDevHitToast.cancel();
                 }
                 mDevHitToast = Toast.makeText(mContext,
@@ -184,7 +184,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
                                 R.plurals.show_dev_countdown_cm, mDevHitCountdown,
                                 mDevHitCountdown),
                         Toast.LENGTH_SHORT);
-                mDevHitToast.show();
+                mDevHitToast.show();*/
             }
 
             mMetricsFeatureProvider.action(

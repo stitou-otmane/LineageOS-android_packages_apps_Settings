@@ -55,7 +55,12 @@ public abstract class LocationBasePreferenceController extends BasePreferenceCon
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return UNSUPPORTED_ON_DEVICE;
+    }
+
+    @Override
+    public boolean isAvailable() {
+        return false;
     }
 
 }

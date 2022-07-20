@@ -29,6 +29,7 @@
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
 
+    <!--
     <Preference
         android:key="top_level_connected_devices"
         android:title="@string/connected_devices_dashboard_title"
@@ -37,6 +38,7 @@
         android:order="-110"
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+        -->
 
     <Preference
         android:key="top_level_apps_and_notifs"
@@ -72,6 +74,7 @@
         android:order="-70"
         android:fragment="com.android.settings.notification.SoundSettings"/>
 
+    <!--
     <Preference
         android:key="top_level_storage"
         android:title="@string/storage_settings"
@@ -97,6 +100,7 @@
         android:order="-50"
         android:fragment="com.android.settings.location.LocationSettings"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
+    -->
 
     <Preference
         android:key="top_level_security"
@@ -107,6 +111,7 @@
         android:fragment="com.android.settings.security.SecuritySettings"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
+    <!--
     <Preference
         android:key="top_level_accounts"
         android:title="@string/account_dashboard_title"
@@ -124,6 +129,7 @@
         android:order="-20"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
+    -->
 
     <Preference
         android:key="top_level_system"
